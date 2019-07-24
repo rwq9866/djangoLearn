@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/sta/css/bootstrap.min.css">
+    <script src="/sta/js/jquery-3.2.1.js"></script>
+    <script src="/sta/js/djangoLearn.js"></script>
+    <script src="/sta/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>hello，{{ name }}</p>
+    <p>
+        <button id="ryxxb" type="button">人员详情</button>
+    </p>
+    <div>
+        <table border="1" align="center" width="60%">
+            <thead>
+                <tr align="center">
+{#                    <th>id</th>#}
+                    <th>用户名</th>
+                    <th>密码</th>
+                </tr>
+            </thead>
+            <tbody id="xq" align="center">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        车牌识别:
+        <input type="file" id="file1">
+        <input type="button" id="lpr" value="开始识别..." />
+        <p>
+
+        </p>
+    </div>
+
+    <input id="news" type="text" placeholder="请输入你想看的新闻(关键字)...">
+    <button id="ss">搜索</button>
+    <table align="center" width="60%">
+        <thead>
+            <th>专属于你的新闻:</th>
+        </thead>
+        <tbody id="xw">
+{#            {% for i in data %}#}
+{#                <tr>#}
+{#                    <td>#}
+{#                        <a href="{{ i.hre }}" target="_blank">#}
+{#                            {{ i.tit }}#}
+{#                        </a>#}
+{#                    </td>#}
+{#                </tr>#}
+{#            {% endfor %}#}
+        </tbody>
+    </table>
+</body>
+</html>
